@@ -1,0 +1,30 @@
+@keyframes takeoff {
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+
+  100% {
+    transform: translate(100px, -50px) rotate(-45deg);
+  }
+}
+
+.animate-takeoff {
+  animation: takeoff 6s infinite ease-in-out;
+}
+
+/* styles.css */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.testimonial-slide {
+  animation: slideIn 0.5s ease forwards;
+}

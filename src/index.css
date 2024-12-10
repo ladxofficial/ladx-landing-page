@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes takeoff {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateX(300px) translateY(-100px) rotate(-45deg);
+    }
+}
+
+@keyframes takeoff-delayed {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateX(350px) translateY(-120px) rotate(-45deg);
+    }
+}
+
+@keyframes takeoff-mobile {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateX(100px) translateY(-60px) rotate(-45deg);
+    }
+}
+
+@keyframes takeoff-mobile-delayed {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateX(120px) translateY(-70px) rotate(-45deg);
+    }
+}
+
+.animate-takeoff {
+    animation: takeoff 6s ease-in-out infinite;
+}
+
+.animate-takeoff-delayed {
+    animation: takeoff-delayed 6s ease-in-out infinite;
+}
+
+.animate-takeoff-mobile {
+    animation: takeoff-mobile 6s ease-in-out infinite;
+}
+
+.animate-takeoff-mobile-delayed {
+    animation: takeoff-mobile-delayed 6s ease-in-out infinite;
+}

@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/dashboard(.*)",
+            "dest": "https://dashboard-lyart-nine-87.vercel.app$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
+}
